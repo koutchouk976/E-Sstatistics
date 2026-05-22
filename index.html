@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8b5cf6">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>EuroMillions</title>
+</head>
+<body>
+
+  <header>
+    <span class="logo">&#9733; EUROMILLIONS</span>
+    <span class="subtitle" id="dataInfo">Chargement…</span>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="grilles" role="tab">Grilles</button>
+    <button class="tab" data-tab="stats" role="tab">Statistiques</button>
+    <button class="tab" data-tab="tirages" role="tab">Tirages 2026</button>
+  </nav>
+
+  <main>
+    <section id="grilles" class="tab-content active">
+      <div id="grilles-container"></div>
+    </section>
+    <section id="stats" class="tab-content">
+      <div id="stats-container"></div>
+    </section>
+    <section id="tirages" class="tab-content">
+      <div id="tirages-container"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
